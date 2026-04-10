@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Master | Dynamic Table Generator</title>
+    <meta name="description" content="A premium, dynamic multiplication table generator that skips number 5. Built with high-performance logic and stunning aesthetics.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <main class="container">
+        <header class="hero">
+            <h1 id="main-title">Multiplication <span class="gradient-text">Master</span></h1>
+            <p class="subtitle">Enter a number to generate a dynamic multiplication table. (We skip 5, because we like to keep it interesting!)</p>
+        </header>
+
+        <section class="controls-section">
+            <div class="input-group glass">
+                <label for="num-input">Enter any number</label>
+                <div class="input-wrapper">
+                    <input type="number" id="num-input" placeholder="e.g. 7" autocomplete="off">
+                    <button id="generate-btn" class="primary-btn">Generate Table</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="results-section" class="results-container hidden">
+            <div class="table-card glass">
+                <div class="table-header">
+                    <h2>Table for <span id="display-num">?</span></h2>
+                    <div class="badge">Skip: 5</div>
+                </div>
+                <div id="table-body" class="table-grid">
+                    <!-- Results will be injected here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Multiplication Master. Built with precision and style.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
